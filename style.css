@@ -1,0 +1,24 @@
+body{
+	display: flex;
+	justify-content: center;
+}
+.ball {
+	height: 200px;
+	width: 200px;
+	border-radius: 50%;
+	background: radial-gradient(circle at 50px 50px, #e60000, #000);
+
+	animation: bouncing-ball 0.5s;
+	animation-direction: alternate;
+	animation-timing-function: cubic-bezier(.5,0.05,1,.5);
+	animation-iteration-count: infinite;
+}
+
+@keyframes bouncing-ball {
+	from { 
+		transform: translate3d(0, 0, 0);     
+	}
+  	to   { 
+  		transform: translate3d(0, 200px, 0);
+  	}
+}
