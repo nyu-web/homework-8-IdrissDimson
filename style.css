@@ -1,6 +1,9 @@
 body{
+	font-family: Arial;
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
+	align-items: center;
 }
 .ball {
 	height: 200px;
@@ -8,9 +11,9 @@ body{
 	border-radius: 50%;
 	background: radial-gradient(circle at 50px 50px, #e60000, #000);
 
-	animation: bouncing-ball 0.5s;
+	animation: bouncing-ball 1s;
 	animation-direction: alternate;
-	animation-timing-function: cubic-bezier(.5,0.05,1,.5);
+	animation-timing-function: cubic-bezier(.5,0.005,1,.5);
 	animation-iteration-count: infinite;
 }
 
